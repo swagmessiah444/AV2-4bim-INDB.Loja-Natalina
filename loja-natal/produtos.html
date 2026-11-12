@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Produtos - Natal Gamer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/produtos.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+<header class="topo">
+  <a class="logo" href="index.html">Natal Gamer</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="produtos.html">Produtos</a>
+    <a href="ofertas.html">Ofertas</a>
+    <a href="contato.html">Contato</a>
+    <a href="carrinho.html">Carrinho <span id="contador-carrinho">0</span></a>
+    <button id="botao-neve">Neve</button>
+  </nav>
+</header>
+<main>
+  <h1>Todos os produtos</h1>
+  <div class="filtros">
+    <input type="text" id="busca" placeholder="Buscar produto...">
+    <select id="filtro">
+      <option value="todas">Todas as categorias</option>
+      <option>Jogos</option>
+      <option>Teclados e Mouses</option>
+      <option>Monitores</option>
+      <option>Componentes</option>
+      <option>Acessórios</option>
+    </select>
+    <select id="ordem">
+      <option value="normal">Ordem padrão</option>
+      <option value="menor">Menor preço</option>
+      <option value="maior">Maior preço</option>
+    </select>
+  </div>
+  <p id="vazio" hidden>Nenhum produto encontrado. Tente outra busca.</p>
+  <div class="grade" id="lista-produtos"></div>
+</main>
+<footer><p>Natal Gamer - Jogos e equipamentos em um preço razoavel #confia</p>
+</footer>
+</body>
+</html>
