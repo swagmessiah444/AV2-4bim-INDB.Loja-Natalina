@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carrinho - Natal Gamer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/produtos.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+<header class="topo">
+  <a class="logo" href="index.html">
+    <img src="img/image.jpg" alt="Natal Gamer" class="logo-img">
+    <span>Natal Gamer</span>
+  </a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="produtos.html">Produtos</a>
+    <a href="ofertas.html">Ofertas</a>
+    <a href="contato.html">Contato</a>
+    <a href="carrinho.html">Carrinho <span id="contador-carrinho">0</span></a>
+    <button id="botao-neve">Neve</button>
+  </nav>
+</header>
+<main>
+  <h1>Meu carrinho</h1>
+  <div id="itens-carrinho"></div>
+  <div class="resumo-wrap">
+    <div class="resumo">
+      <div class="resumo-content">
+        <p>
+          <input type="text" id="cupom" placeholder="Cupom de desconto">
+          <button id="botao-cupom">Aplicar</button>
+        </p>
+        <p>Subtotal: <span id="subtotal">R$ 0,00</span></p>
+        <p>Desconto: <span id="desconto">R$ 0,00</span></p>
+        <h2>Total: <span id="total">R$ 0,00</span></h2>
+        <button id="botao-finalizar">Finalizar compra</button>
+      </div>
+      <img src="img/homersanta.jpg" alt="Homer Santa" class="cart-side-image">
+    </div>
+  </div>
+</main>
+<footer><p>Natal Gamer - Jogos e equipamentos em um preço razoavel #confia</p>
+</footer>
+</body>
+</html>
